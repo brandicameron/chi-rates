@@ -44,7 +44,7 @@
 .entered-year {
 	height: 100%;
 	margin: 0 10px;
-	
+
 }
 
 .entered-sqft {
@@ -107,11 +107,17 @@ button:active {
 }
 
 @media screen and (max-width: 400px) {
+	.logo {
+		height: 90px;
+		background: var(--black) url(../img/logo.svg) no-repeat center;
+		background-size: 250px;
+	}
+
 	#total {
-	height: 70%;
-}
-	
+		height: 60%;
+	}
+
 	form {
-	margin: 35px auto 0 auto;
-}
+		margin: 10px auto 0 auto;
+	}
 }
