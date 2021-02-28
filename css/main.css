@@ -1,0 +1,107 @@
+:root {
+	--light-accent: #d0d0d2;
+	--black: #232323;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: var(--black);
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+	height: 100px;
+	background: var(--black) url(../img/logo.svg) no-repeat center;
+}
+
+.result {
+	width: 100vw;
+	height: 200px;
+}
+
+#total {
+	width: 100vw;
+	height: 90%;
+	font-size: 5.3rem;
+}
+
+.data-entered {
+	font-size: 1.4rem;
+	height: 25%;
+	border-top: 1px solid var(--light-accent);
+	border-bottom: 1px solid var(--light-accent);
+}
+
+.entered-sqft,
+.entered-year {
+	height: 100%;
+	margin: 0 10px;
+	
+}
+
+.entered-sqft {
+	border-right: 1px solid var(--light-accent);
+	padding-right: 20px;
+}
+
+.entered-sqft::before {
+	content: "Sq Footage:";
+	font-size: .8rem;
+	padding-right: 8px;
+	opacity: .6;
+}
+
+.entered-year::before {
+	content: "Year Built:";
+	font-size: .8rem;
+	padding-right: 8px;
+	opacity: .6;
+}
+
+form {
+	width: 300px;
+	margin: 55px auto 0 auto;
+}
+
+input,
+button {
+	width: 100%;
+	margin: 5px 0 10px 0;
+	height: 60px;
+	border-radius: 10px;
+	border: none;
+	font-size: 1.3rem;
+}
+
+input {
+	background: #efefef;
+	color: #434343;
+	padding-left: 20px;
+}
+
+input::placeholder {
+	color: #a0a0a0;
+	font-weight: 300;
+}
+
+button {
+	background: var(--black);
+	color: #fff;
+}
+
+button:hover {
+	box-shadow: inset 1px 1px 8px rgba(0 0 0 / 25%);
+}
+
+button:active {
+	transform: scale(.99);
+	box-shadow: inset 1px 1px 8px rgba(0 0 0 / 25%);
+}
