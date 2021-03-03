@@ -108,6 +108,34 @@ button:active {
   box-shadow: inset 1px 1px 8px rgba(0 0 0 / 25%);
 }
 
+.result,
+#the-form {
+	transform: scaleX(0);
+	opacity: 0;
+	animation: open 200ms ease forwards; 
+}
+
+@keyframes open {
+	to {
+		transform: scaleX(1);
+		opacity: 1;
+	}
+}
+
+#total {
+	transform: scaleY(0);
+	opacity: 0;
+	animation: rise 100ms ease-out forwards 450ms;
+}
+
+@keyframes rise {
+	to {
+		transform: scaleY(1);
+		transform-origin: bottom;
+		opacity: 1;
+	}
+}
+
 @media screen and (max-width: 400px) {
   .logo {
     height: 90px;
