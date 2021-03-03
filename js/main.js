@@ -32,7 +32,7 @@ function calculateRate(size, year) {
 	} else if (sqft.value >= 6000) {
 		size = Math.round(sqft.value * .11);
 	}
-
+	
 	if (yearBuilt.value === "" || yearBuilt.value >= 2000) {
 		year = 0;
 		// anything before 1919 is handled below in display rate function
@@ -45,7 +45,7 @@ function calculateRate(size, year) {
 	} else if (yearBuilt.value <= 1999) {
 		year = 25;
 	}
-	totalPrice = size + year;
+	totalPrice = size + year; 
 }
 
 
@@ -80,3 +80,4 @@ submitBtn.addEventListener('click', displayRate);
 resetBtn.addEventListener('click', () => {
 	form.reset();
 });
+
